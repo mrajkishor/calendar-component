@@ -1,0 +1,48 @@
+.calendar {
+    width: 240px;
+    background-color: #08161B;
+    color: #839496;
+    padding: 8px;
+    box-sizing: border-box;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        'Liberation Mono', 'Courier New', monospace;
+}
+
+/* Month + Year */
+.header {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+/* Week days row */
+.weekRow {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.weekDay {
+    text-align: center;
+}
+
+/* Calendar grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 2px;
+}
+
+.cell {
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* Selected date*/
+.selected {
+    font-weight: 700;
+    color: #08161B;
+    background-color: #839496;
+}
